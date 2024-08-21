@@ -4,10 +4,10 @@
 """
 import asyncio
 import random
-from typing import Any, AsyncGenerator
+from typing import AsyncGenerator
 
 
-async def async_generator() -> AsyncGenerator[float, Any]:
+async def async_generator() -> AsyncGenerator[float, any]:
     """ Async Geneator co routine """
     for _ in range(10):
         await asyncio.sleep(1)
