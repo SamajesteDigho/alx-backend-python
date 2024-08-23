@@ -7,7 +7,7 @@ import random
 from typing import Any, AsyncGenerator
 
 
-async def async_generator() -> AsyncGenerator[float, Any]:
+async def async_generator() -> AsyncGenerator[float, float]:
     """ Async Geneator co routine """
     for _ in range(10):
         await asyncio.sleep(1)
